@@ -1,0 +1,7 @@
+<h3>Danh sách user (đã loại trùng):</h3>
+<ul>
+    <li *ngFor="let u of uniqueUsers">{{ u.name }} - {{ u.role }}</li>
+</ul>
+
+<h3>Gom nhóm theo role:</h3>
+<pre>{{ groupedUsers | json }}</pre>

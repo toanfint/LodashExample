@@ -1,0 +1,21 @@
+<form [formGroup]="userForm">
+    <label>
+        Name:
+        <input formControlName="name">
+    </label>
+    <br>
+    <label>
+        Age:
+        <input formControlName="age" type="number">
+    </label>
+</form>
+
+<p>Form dirty? {{ userForm.dirty }}</p>
+<p>Form value thay đổi (so với dữ liệu gốc)? {{ isChanged }}</p>
+
+<div style="padding: 5px 10px;">
+    <p><b>userForm.dirty</b> chỉ cần input thay đổi value một lần là true, kể cả khi bạn gõ rồi sửa lại về giá trị ban
+        đầu</p>
+    <p><b>_.isEqual(value, originalData)</b> giúp so sánh nội dung thực sự với dữ liệu gốc.</p>
+    <p>Nhờ đó, nếu người dùng nhập lại đúng dữ liệu ban đầu → isChanged sẽ là false.</p>
+</div>
