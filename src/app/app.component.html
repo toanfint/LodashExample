@@ -54,6 +54,8 @@
 
   _.get(object, path, defaultValue): Lấy giá trị an toàn theo path.
 
+  _.find: tìm phần tử trong danh sách.
+
   _.set(object, path, value): Gán giá trị theo path.
 
   _.isEqual(a, b): So sánh object sâu (deep comparison).
@@ -65,6 +67,8 @@
   _.uniq(array) / _.uniqBy(array, key): Loại bỏ phần tử trùng.
 
   _.groupBy(array, key): Gom nhóm theo thuộc tính.
+
+  _.has: kiểm tra object có chứa thuộc tính không.
 
   _.orderBy(array, key, order): Sắp xếp.
 
@@ -78,8 +82,8 @@
 
   _.isEmpty(value): Kiểm tra rỗng (hữu ích cho object, array, string).
 
-  _.isEmpty([]); // true
-  _.isEmpty(''); // true
+    _.isEmpty([]); // true
+    _.isEmpty(''); // true
 
   _.isNil(value): Kiểm tra null hoặc undefined.
 
